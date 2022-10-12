@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--https://www.codegrepper.com/search.php?answer_removed=1&q=font%20awesome%207.0---> 
+    <!--Bu web sitesinden iconumuzu ekleriz. Eklmemizin nedeni css.'i aktif etmektir.'-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+    <title>Dark and Light Theme</title>
+
+    <!--css. dosyasına değilde, html içine yazarız. (Internal CSS)-->
+    <!--3.ADIM : CSS KISMI-->
+    <style>
+        body {
+            margin: 0; /* Nesnelerin mesafeleri*/
+            padding: 0; /* Nesnelerin mesafeleri*/ /*Margin ve Padding sıfır yaptığımız zaman metin 0 noktasına gelir. */
+            display: flex; /*Display-flex : Sayfada bulunan görsel nesne olduğu gibi sağ köşeye gitmektedir. */
+
+
+
+
+        }
+
+        .text {
+            width: 100%; /* text clası içerisindeki sayfayı ne kadar kaplayacağına karar verir. Metin kenardamı dursun yoksa %100'ü ne dağılsın mı vs. */
+            font-size: 25px; /* text clası içerisindeki metinin font büyüklüğünü belirler*/
+            margin: 5rem; /* Mesafe ile ilgili*/
+            
+        }
+
+        .buttons {
+            width : 70px;
+            height: 70px;
+            /*background-color: brown;  buttons classında yer alan iconun arka rengini belirler. (Arka Plan sarı olduktan sonra, bu background color'a ihtiyacımız kalmaz.*/
+            border-radius: 50%; /* buttons clasında yer alan iconun tam daire olması için kullanılır, radius veririz.*/
+            display: flex;
+            align-items: center; /*iconu tam ortalamak için kullanılır. Ama y ekseninde ortaya gelir */
+            justify-content: center; /* iconu %100 şekilde çemberin ortasına ortalamak için (x0 y0) bu etiketi kullaınırız. */
+            border: 2px solid black; /* Çevresine ince bir siyah şerit çeker*/
+            margin: 5rem;
+        }
+
+        .fa-sun-o{
+            font-size: 50px; /*Aşağıda hazır bir şekilde button classını kopyalamıştık. Buradaki class'ı büyüktmek için tekrar font-size kullanılır. */
+            background-color: rgb(255, 238, 0);
+            border-radius: 50%;
+
+        }
+
+        .fa-moon-o {
+            font-size: 60px; /*Aşağıda hazır bir şekilde button classını kopyalamıştık. Buradaki class'ı büyüktmek için tekrar font-size kullanılır. */
+            background-color: rgb(76, 6, 241);
+            border-radius: 50%;
+        }
+
+    </style>
+
+    
+</head>
+
+<body>
+    <!--DİPNOT 1 : nokta text tab dediğimiz zaman "div class="text><div> şeklinde metinsel kalıbı ekrana getirir."--> 
+    <!--DİPNOT 2 : "lorem50 enter" dediğimiz zaman, aşağıdaki text yazısını otomatik olarak çıkarmaktadır.-->
+    
+    <div class="text"><h1>Başlık</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi soluta minus ea fuga facilis? Adipisci cupiditate ullam vitae porro voluptatum suscipit maxime facere debitis amet natus. Aliquid laudantium veniam nemo dolorem tenetur explicabo. Corrupti est blanditiis cupiditate ex, a id necessitatibus quod. Necessitatibus vitae earum fugit delectus cum possimus minima?</div>
+
+    <!--2.ADIM : -->
+    <!--https://fontawesome.com/v4/icon/sun-o--> 
+    <!--Yukardaki web sitesinden de icon buluruz, ve aşşağıda div'in içine yapıştırırız.-->
+    <div class="buttons"><i class="fa fa-sun-o" aria-hidden="true"></i></div>
+
+
+
+    <!--1.ADIM : Kullandığımız js dosyasını HTML kısmında script şekilde ekleriz. Js dosyasını çalıştırmak için bu adım yapılmalıdır-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
